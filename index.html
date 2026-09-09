@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyaz Kalp Efekti - Basılı Tut & Büyüt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="heart-container"></div>
+  
+  <main class="ui-overlay">
+    <div class="header">
+      <h1 class="title">🤍 Ekrana Basılı Tut!</h1>
+      <p class="subtitle">Ne kadar uzun basarsan o kadar büyük beyaz kalp çıkar</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-badge">
+        <span class="stat-icon">🤍</span>
+        <span id="heart-count">0</span>
+        <span class="stat-label">Kalp Oluşturuldu</span>
+      </div>
+    </div>
+
+    <div class="controls-panel">
+      <div class="control-group">
+        <label>Kalp Teması</label>
+        <div class="theme-buttons">
+          <button class="theme-btn active" data-theme="white">🤍 Saf Beyaz</button>
+          <button class="theme-btn" data-theme="classic">❤️ Klasik Kırmızı</button>
+          <button class="theme-btn" data-theme="neon">✨ Neon Işıltı</button>
+          <button class="theme-btn" data-theme="rainbow">🌈 Gökkuşağı</button>
+          <button class="theme-btn" data-theme="gold">👑 Altın Parıltı</button>
+        </div>
+      </div>
+
+      <div class="control-row">
+        <button id="sound-toggle" class="control-btn active">
+          <span class="btn-icon">🔊</span> Ses: Açık
+        </button>
+        <button id="auto-mode" class="control-btn">
+          <span class="btn-icon">🌧️</span> Kalp Yağmuru: Kapalı
+        </button>
+        <button id="clear-btn" class="control-btn danger">
+          <span class="btn-icon">🗑️</span> Temizle
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
